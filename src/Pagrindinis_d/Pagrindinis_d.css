@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+}
+
+/* MAIN START*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Main_1_d start*/
+
+.main_1_d {
+    padding: 40px;
+    cursor: pointer;
+}
+
+.main_1_d .GELE {
+    position: absolute;
+    top: 35px;  
+    left: 380px;   
+    width: 110px;
+}
+
+.main_1_d h1 {
+    color: #43648C;
+    font-family: "Elsie", serif;
+    font-size: 160px;
+    font-weight: 900;
+    letter-spacing: 4.8px;
+    margin: 0;
+}
+
+.main_1_d_container{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.main_1_d_container img{
+    position: absolute; 
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 220px; 
+}
+
+.main_1_d p {
+    top: 200px; 
+    font-size: 1.2rem;
+    font-family: "Cormorant Unicase";
+    position: relative;
+}
+
+/*main_1_d end*/
+
+/* main_2_d start*/
+
+.main_2_d {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.main_2_d h2 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.work-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000; 
+    font-family: 'Montserrat';
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.work-item:first-child {
+    border-top: 1px solid #000000; /* Viršutinė linija tik pirmam elementui */
+}
+
+.work-item button {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-decoration: underline;
+    color: inherit;
+    background: none;
+    border: none;
+    transition: color 0.1s ease;
+    cursor: pointer;
+}
+
+.work-item:hover {
+    background-color: #43638B; 
+    color: #fff; 
+}
+
+.work-item button:hover {
+    font-weight: 550; 
+}
+
+/*main_2_d end*/
+
+/*main_3_d start*/
+
+.main_3_d {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: #43638B; 
+    margin-top: 40px;
+}
+
+.main_3_d p {
+    color: rgba(240, 203, 124, 1); 
+    margin-right: 20px;
+    flex: 1;
+    font-family: Elsie;
+    font-size: 40px;
+    margin-bottom: 400px;
+    transition: font-weight 0.3s ease; 
+}
+
+.main_3_d p:hover {
+    font-weight: 600; 
+}
+
+.link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.main_3_d svg {
+    width: 500px; 
+    margin-right:250px;
+    margin-top:100px;
+    height: auto; 
+}
+
+/*main_3_d end*/
+
+/*MAIN END*/
+
+/*MOBILE VERSION*/
+
+@media (max-width: 768px) {
+
+    /* main_1_d */
+
+    .main_1_d .GELE {
+        position: absolute;
+        top: 7px;   
+        left: 120px;  
+        width: 40px;
+    }
+
+    .main_1_d_container h1 {
+        font-size:45px;
+    }
+
+    .main_1_d_container img {
+        width: 80px; 
+        top: 200px;
+    }
+
+    .main_1_d_container p {
+        font-size: 15px;
+        top: 180px;
+    }
+
+    /* Main_2_d */
+
+    .main_2_d{
+        margin-top: 150px;
+    }
+    
+    #mano-darbai {
+        font-size: 22px;
+    }
+
+    .work-item {
+        padding: 5px 20px; 
+        font-size: 15px;
+    }
+
+    .work-item button {
+        font-size: 10px;
+    }    
+
+    /* Main_3_d */
+
+    .main_3_d {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .main_3_d .mobile-text1{
+        margin-bottom: 0px;
+        padding: 0px;
+        font-family: Elsie;
+        font-size: 40px;
+        font-size: 30px;
+    }
+    
+    .main_3_d .mobile-text1:hover {
+        font-weight: inherit;
+    }
+
+    .main_3_d .mobile-text2 {
+        font-size: 14px; 
+        font-family: 'Montserrat', sans-serif;
+        color: #FFF;
+        letter-spacing: 2.24px;
+        text-align: justify;
+        margin: 20px;
+        margin-top: 0px;
+    }
+    
+    .main_3_d .mobile-text2:hover {
+        font-weight: inherit;
+    }
+
+    .main_3_d svg {
+        width: 250px;
+        height: auto;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 30px; 
+    }
+
+    .main_3_d .mobile-text3 {
+        font-size: 14px; 
+        font-family: 'Montserrat', sans-serif;
+        color: #FFF;
+        letter-spacing: 2.24px;
+        text-align: justify;
+        margin: 20px;
+    }
+    
+    .main_3_d .mobile-text3:hover {
+        font-weight: inherit;
+    }   
+
+}

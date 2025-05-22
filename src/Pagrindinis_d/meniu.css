@@ -1,0 +1,87 @@
+.meniu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #43638B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation: slide-in 0.8s forwards; 
+}
+  
+    @keyframes slide-in {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+.close-x {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}    
+
+.close-x:hover {
+    transform: scale(1.2); 
+    transition: all 0.3s ease; 
+}
+
+.meniu-content h2{
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    margin: 20px 0; 
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 64px;
+}
+
+.menu-item:hover {
+    color: #f0cb7c;
+}
+
+.bendradarbiaujam_geles {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.flower {
+    margin: 20px;
+}
+
+.gele_s {
+    height: 50px; 
+    width: auto;  
+    vertical-align: middle; 
+}
+
+/* pasalina link'o styles */
+.no-link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 768px) {
+
+    .meniu-content h2 {
+        font-size: 30px;
+    }
+
+    .gele_s {
+        height: 20px; 
+    }    
+}
+

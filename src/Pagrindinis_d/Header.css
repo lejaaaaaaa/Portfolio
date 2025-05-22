@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+
+.logo{
+    width: 73px;
+    height: auto;
+    text-align: left;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 1px;
+    background-color: #000;
+}
+.middle-button {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .middle-button {
+    display: block; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    border: none;
+    background: #F0CB7C;
+    width: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 27px;
+    font-family: "Cormorant Unicase";
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+}

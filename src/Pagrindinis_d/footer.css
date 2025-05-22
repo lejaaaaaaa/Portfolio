@@ -1,0 +1,66 @@
+.footer {
+    background-color: #F0CB7C;
+    position: relative;
+    overflow: hidden;
+    height:180px;
+}
+
+.gele{
+    width: 20px; 
+    height: auto;
+}
+.scrolling-text {
+    display: flex;
+    animation: scrolling 8s linear infinite; 
+    padding-bottom:40px;
+}
+
+.scrolling-text p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 10;
+    flex-shrink: 0;
+    white-space: nowrap; 
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end; 
+    gap: 10px; 
+    position: absolute;
+    right: 20px; 
+    bottom: 40px; 
+    margin-bottom: 20px;
+    margin-right:30px;
+}
+
+.social {
+    width: auto; 
+    height: 30px;
+}
+
+.social:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.bottom p{
+    color:rgb(0, 0, 0);
+    background-color: white;
+    margin-top:40px;
+    padding:5px;
+    font-size:12px;
+    font-family: Montserrat;
+}
+

@@ -1,0 +1,152 @@
+.horizontal-page {
+  display: flex; 
+  width: 100vw; 
+  height: 88vh; 
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  scroll-behavior: smooth; 
+}
+
+.scroll-section2, .scroll-section1 {
+  display: inline-block;
+  height: 100%;
+  min-width: 100vw;
+  padding-left: 30px;
+}
+
+.scroll-section1{
+  padding-right: 60px;
+}
+
+.scroll-section2{
+  padding-left: 80px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #F0CB7C;
+  font-family: 'Elsie', serif;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.intro-text{
+  margin-top: 0px;
+  font-family: "Cormorant Unicase";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px; 
+}
+
+.table-container {
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 10px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column; 
+  width: fit-content;
+}
+
+.table-row {
+  display: flex;
+  width: 100%; 
+}
+
+.table-cell {
+  flex: 1;
+  width: 50%; 
+  height: 200px; 
+  padding-bottom: 20px;
+  text-align: justify; 
+  font-family: Arial, sans-serif; 
+  font-size: 20px;
+}
+.table-cell-2{
+    margin-left:40px;
+    margin-top: 20px;
+}
+
+.blinking-text {
+  display: inline-block;
+  animation: blinkAndBold 0.8s infinite;
+}
+
+@keyframes blinkAndBold {
+0%, 100% {
+  opacity: 1;
+  font-weight: normal;
+}
+50% {
+  opacity: 1;
+  font-weight: bold;
+}
+}
+
+.image-section h1{
+  width: 274px;
+  height: 269px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top:0px;
+  margin-left: 0px;
+  left: 0;
+  color: #43638B;
+  font-family: Elsie;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+  margin-top: 30px; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+  padding-left: 80px;
+}
+
+.image-row img{
+  width: 270px;
+  gap: 40px;
+  margin-right: 50px; 
+  height: 270px;
+}
+
+.horizontal-image {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
+}
+.vertical-line {
+  position: relative; 
+  padding-left: 40px; 
+}
+
+.vertical-line::before {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  top: 5%; 
+  height: 90%; 
+  width: 1px; 
+  background-color: #000000; 
+}
